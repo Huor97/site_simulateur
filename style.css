@@ -1,0 +1,66 @@
+#container-formuler{
+    width: 100%;
+    background-color: rgb(209, 178, 157);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#formuler{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    width: 90%;
+}
+
+#parant-nom-prenom{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+}
+
+#parant-email{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    
+}
+
+
+input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+
+span{
+    color: red;
+}
+
+#parant-button-formuler{
+    margin-top: 25px;
+    width:50%;
+    display: flex;
+    justify-content: center;
+}
+
+#parant-button-formuler > button{
+    border: none;
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    
+}
