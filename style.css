@@ -8,7 +8,6 @@
 }
 
 #formuler{
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,22 +15,38 @@
     width: 90%;
 }
 
-#parant-nom-prenom{
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+#parent-nom-prenom{ 
     width: 50%;
+    padding: 50px;
 }
 
-#parant-email{
+#parent-email{
+    width: 50%;
+    padding-bottom: 50px;
+}
 
+#parent-telephone{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+#parent-objet {
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+#parent-textarea{
+    width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 50%;
-    
+    justify-content: center;
+}
+
+#parent-textarea > textarea {
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
 }
 
 
@@ -41,26 +56,24 @@ input{
     border: none;
     border-radius: 5px;
     margin-top: 10px;
-
+    margin-bottom: 10px;
 }
 
 span{
     color: red;
 }
 
-#parant-button-formuler{
+#parent-button-formuler{
     margin-top: 25px;
     width:50%;
-    display: flex;
-    justify-content: center;
+    display: block;
 }
 
-#parant-button-formuler > button{
+#parent-button-formuler > button{
     border: none;
     width: 20%;
     height: 50px;
     border-radius: 10px;
     font-size: large;
-    font-weight: bold;
-    
+    font-weight: bold; 
 }
