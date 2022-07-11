@@ -1,3 +1,18 @@
+body{
+    --color-un:#eb5846;
+    --color-deux: #ffec34;
+}
+
+/* ***************************** header */
+#container-header{
+    border: solid 1px;
+    width: 100%;
+    height: 100px;
+}
+  
+/* ***************************** fin header */
+
+/* ***************************** formuler */
 #container-formuler{
     width: 100%;
     background-color: rgb(209, 178, 157);
@@ -77,3 +92,70 @@ span{
     font-size: large;
     font-weight: bold; 
 }
+/* **************************** fin formuler */
+
+/* **************************** contenu de page */
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+/* **************************** contenu de page1 */
+#container-page1{
+    background-color: var(--color-un);
+    width: 80%;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#parent-titre-page1{
+    width: 40%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+#parent-titre-page1 > #titre-page1{
+    color: var(--color-deux);
+    padding-left: 20px;
+}
+
+#parent-titre-page1 > p{
+    padding-left: 20px;
+}
+
+#parent-video-page1{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+#parent-video-page1 > #video-page1{
+    width: 90%;
+    height: 600px;
+    border-radius: 3px;
+}
+
+/* **************************** fin contenu de page1 */
+
+/* **************************** contenu de page2 */
+
+#parent-titre-page2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#parent-titre-page2 > h1{
+    color: var(--color-un);
+}
+
+/* **************************** fin contenu de page2 */
