@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulateur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div id="container-formuler">
+        <form action="" method="post" id="formuler">
+            <div id="parent-nom-prenom">
+                <label for="name">nom/prénome <span>*</span></label>
+                <input type="text" id="nom" name="nom">
+            </div>
+            <div id="parent-email">
+                <label for="email">email <span>*</span> </label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div id="parent-telephon">
+              
+            </div>
+
+            <div id="parent-telephone">
+                <label for="phone">telephon</label>
+                <input type="tel" id="telephon" name="phone">
+            </div>
+
+            <div id="parent-objet">
+                <label for="objet">objet: <span>*</span></label>
+                <input type="text" id="objet" name="objet">
+            </div>
+
+            <div id="parent-textarea">
+                <label for="message">Ici votre commenter <span>*</span></label>
+                <textarea type="text" name="message" id="message" cols="50" rows="10"></textarea>
+
+            </div>
+
+            <div id="parent-button-formuler">
+                <button type="submit" id="envoyer">Envoyer</button>
+            </div>
+        </form>
+    </div> 
+
+
+    <script src="formuler.js"></script>
+</body>
+</html>
