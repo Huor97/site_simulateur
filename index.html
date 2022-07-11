@@ -4,47 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulateur</title>
+    <title>index simulateur</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <div id="container-formuler">
-        <form action="" method="post" id="formuler">
-            <div id="parent-nom-prenom">
-                <label for="name">nom/prénome <span>*</span></label>
-                <input type="text" id="nom" name="nom">
+    <div id="container-header">
+        <header>
+        </header>
+    </div>
+    <!-- ---------------------------- contenue de tous les pages -->
+    <div id="container">
+        <!-- ------------------------ contenue de premier page -->
+        <div id="container-page1">
+            <!-- avoir une titre, une text à gouche, avoir une vidéo à droit -->
+            <!-- div gouche pour texte -->
+            <div id="parent-titre-page1">
+                <!-- titre de page1 -->
+                <h1 id="titre-page1">LES PRINCIPES SIMPLES DU SPRING CAMP</h1>
+                <!-- avoir 3 button qui permetre de chaque buttjon douvrire 3 paragraph -->
             </div>
-            <div id="parent-email">
-                <label for="email">email <span>*</span> </label>
-                <input type="text" id="email" name="email">
-            </div>
-            <div id="parent-telephon">
-              
-            </div>
-
-            <div id="parent-telephone">
-                <label for="phone">telephon</label>
-                <input type="tel" id="telephon" name="phone">
-            </div>
-
-            <div id="parent-objet">
-                <label for="objet">objet: <span>*</span></label>
-                <input type="text" id="objet" name="objet">
+            <!-- div droit pour vidéo -->
+            <div id="parent-video-page1">
+                <iframe id="video-page1" src="https://www.youtube.com/embed/jjcce4Hgrxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
-            <div id="parent-textarea">
-                <label for="message">Ici votre commenter <span>*</span></label>
-                <textarea type="text" name="message" id="message" cols="50" rows="10"></textarea>
+        </div>
+        <!-- ------------------------ fin contenue de premier page -->
 
-            </div>
+        <!-- ------------------------ contenue de la deuxièmes page -->
+        <div id="parent-titre-page2">
+            <h1>LE SPRINGCAMP</h1>
+        </div>
+   
+        <!-- ------------------------ contenue de la deuxièmes page -->
 
-            <div id="parent-button-formuler">
-                <button type="submit" id="envoyer">Envoyer</button>
-            </div>
-        </form>
-    </div> 
-
-
-    <script src="app.js"></script>
+    </div>
+    <!-- ---------------------------- fin contenue de tous les pages -->
+    <div id="container-footer"></div>
+    <script src="contenu.js"></script>
 </body>
 </html>
