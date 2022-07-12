@@ -108,26 +108,65 @@ span{
     background-color: var(--color-un);
     width: 80%;
     display: flex;
-    
     justify-content: space-around;
-    align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 #parent-titre-page1{
     width: 40%;
-    height: 600px;
+    height: 100%;
+    padding: 1px;
     display: flex;
     flex-direction: column;
 }
-#parent-titre-page1 > #titre-page1{
+
+.titre-page1{
     color: var(--color-deux);
     padding-left: 20px;
+    display: flex;
+    font-size: 40px;
 }
 
-#parent-titre-page1 > p{
-    padding-left: 20px;
+#parent-titre-page1 > #container-buttos-texts {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#container-buttos-texts > .container-buttos-text{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 50px;
+
+}
+
+.sous-page1{
+    color: var(--color-deux);
+    display: flex;
+    font-size: 30px;
+    margin-top: 12px;
+}
+
+.buttonsinfo{
+    width: 15%;
+    height: 60px;
+    margin-left: 15px;
+    background-image: url(./image/plus\ \(1\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container-titre-paragraph{
+    width: 85%;
+}
+
+.paragraphs {
+    display: none;
+    margin: 0;
 }
 
 #parent-video-page1{
@@ -137,9 +176,15 @@ span{
  
 }
 
-#parent-video-page1 > #video-page1{
-    width: 90%;
+#parent-video-page1 > #video-controler-page1{
+    width: 98%;
     height: 600px;
+    padding: 5px;
+}
+
+#parent-video-page1 > #video-controler-page1 > #video-page1{
+    width: 95%;
+    height: 100%;
     border-radius: 3px;
 }
 
@@ -159,3 +204,30 @@ span{
 }
 
 /* **************************** fin contenu de page2 */
+
+
+/* **************************** responsive */
+/* **************************** max 1300 */
+@media (max-width: 1300px) and (min-width: 1000px) {
+    #parent-video-page1{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+     
+    }
+    
+    #parent-video-page1 > #video-controler-page1{
+        width: 98%;
+        height: 400px;
+        padding: 5px;
+    }
+    
+    #parent-video-page1 > #video-controler-page1 > #video-page1{
+        width: 95%;
+        height: 100%;
+        border-radius: 3px;
+    }
+}
+/* **************************** fin max 1300 */
+
+/* **************************** fin responsive */
