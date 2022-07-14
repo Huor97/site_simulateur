@@ -1,15 +1,100 @@
 body{
     --color-un:#eb5846;
     --color-deux: #ffec34;
+    background-color: rgb(193, 232, 219);
 }
 
 /* ***************************** header */
 #container-header{
-    border: solid 1px;
     width: 100%;
-    height: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > #logo{
+    width: 10%;
+    padding-left: 35px;
+}
+
+#recherche{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+  }
+
+#searchInput{
+    width: 50%;
+}
+
+/* ****************************** le menu vers d'autre onglais dans header */
+#menu-lien a {
+    margin: 0 3px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 45px;
+    background-color: #eb5846;
+    color: white;
+    border: 2px solid black;
+    text-transform: uppercase;
 }
   
+#menu-lien a:hover {
+    color: darkblue;
+}
+
+#searchInput{
+    border: solid 1px;
+}
+
+/* ************************* que fait ce partie dans header? demande à Solen et Marc  */
+#first-column a:hover {
+    background-color: rgb(233, 130, 130);
+    color: #280004;
+}
+
+#extra-column {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+  
+#preinscription {
+    background-color: yellow;
+    padding: 8px;
+    border: 2px solid black;
+    margin-right: 5px;
+}
+  
+#communication {
+    background-color: #eb5846;
+    color: white;
+    padding: 8px;
+    margin-right: 3px;
+    border: 2px solid black;
+}
+
+#menu-lien #preinscription:hover,
+#menu-lien #communication:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.menu-fin {
+    display: flex;
+    align-items: flex-start;
+    margin: 15px 0;
+}
+
 /* ***************************** fin header */
 
 /* ***************************** formuler */
@@ -204,7 +289,89 @@ span{
 }
 
 /* **************************** fin contenu de page2 */
+/* **************************** footer page */
+.menu-fin{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.menu-fin:first-child{
+    display: flex;
+    align-items: flex-end;
+}
+.blocrouge {
+    background-image: url("./image/telephone-encadre.png");
+    background-size: 85%;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 313px;
+    display: flex;
+    flex-direction: column;
+}
+
+#container-image-paragraph-footer {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+
+#container-contacte{
+display: flex;
+}
+
+#container-contacte > img {
+    width: 5%;
+    padding-top: 60px;
+    padding-left: 40px;
+}
+  
+
+#container-image-paragraph-footer > #numero {
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 17px;
+    color: white;
+}
+
+#container-image-paragraph-footer > img{
+    width: 60%;
+    padding-left: 86px;
+    margin-bottom: -40px;
+    margin-top: -108px;
+}
+
+#container-reseaux{
+    width: 50%;
+}
+
+#container-reseaux > a > img{
+    width: 10%;
+    padding: 40px;
+}
+  
+.carte {
+width: 30%;
+height: 400px;
+}
+  
+.footpic {
+width: 33px;
+height: 50px;
+}
+  
+.footer-links {
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.footer-links > p {
+    font-weight: bold;
+}
+
+/* **************************** fin footer */
 
 /* **************************** responsive */
 /* **************************** max 1300 */
