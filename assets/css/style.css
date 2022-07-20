@@ -176,7 +176,7 @@ nav ul li a{
   
   .cta .girl{
     width: 450px;
-    top: 340px;
+    top: 400px;
   }
 
   .cta .bubble{
@@ -204,4 +204,9 @@ nav ul li a{
     padding: 10px;
     font-size: 2rem;
   }
+
+  nav ul li a{
+    font-size: 1.3rem;
+  }
+
 }
