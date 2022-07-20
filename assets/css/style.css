@@ -6,3 +6,202 @@ html, body{
 body{
   background-color: #eeeeee;
 }
+
+
+main{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header{
+  position:relative;
+  padding-top: 130px;
+  padding-left: 50px;
+  padding-bottom: 40px;
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(249,87,66,1) 25%, rgba(249,87,66,1) 100%); 
+}
+
+#logo img{
+  width: 300px;
+}
+
+.cta {
+  position: absolute;
+  top: 2rem;
+  right:60px;
+  height: 371px;
+}
+
+.cta .girl{
+  display:block;
+  position: absolute;
+  width: 240px;
+  right:0;
+  bottom: 0;
+}
+
+.cta .bubble{
+  display: block;
+  position: absolute;
+  right:200px;
+  width: 270px;
+  top: 10px;
+}
+
+.button-group{
+  position:absolute;
+  right: 300px;
+  bottom: 70px;
+}
+
+.cta p{
+  position: absolute;
+  text-align: center;
+  width: 300px;
+  right: 200px;
+  top: 50px;
+  z-index: 1;
+  transform: rotate(-3deg);
+  font-size: 1.3rem;
+}
+
+.button-group{
+  position: absolute;
+  bottom: 60px;
+  right: 260px;
+}
+
+.btn-preinscription, .btn-kit{
+  display: block;
+  padding: 0.25rem 0;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+.btn-preinscription{
+  color: black;
+  background-color: rgb(251, 255, 0);  
+}
+
+.btn-kit{
+  color: white;
+  background-color: #ce3b30;
+}
+
+nav{
+  background-color: #ce3b30;
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a{
+  display: block;
+  padding: 0.25rem 0.5rem; 
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width:960px){
+  #logo img{
+    width: 200px;
+  }
+  .cta {
+    height: 305px;
+  }
+
+  .cta .girl{
+  width: 200px;
+  }
+
+  .cta .bubble{
+    width: 200px;
+  }
+  
+  .cta p{
+    right: 155px;
+    top: 40px;
+    font-size: 1rem;
+  }
+
+  .btn-preinscription, .btn-kit{
+    width: 130px;
+    font-size: 0.8rem;
+  }
+
+  .button-group{
+    right: 220px;
+  }  
+  
+  nav ul li a{
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 2rem;
+    padding-bottom: 0;
+    background: none;
+    background-color: rgba(249,87,66,1);
+  }
+  #logo{
+    display: flex;
+    justify-content: center;
+  }
+  #logo img{
+    width: 400px;
+  }  
+  
+  .cta .girl{
+    width: 450px;
+    top: 340px;
+  }
+
+  .cta .bubble{
+    width: 300px;
+    right: 300px;
+    top: 400px;
+    z-index: 1;
+  }
+  
+  .cta p{
+    right: 310px;
+    top: 450px;
+    font-size: 1.3rem;
+    z-index: 2;
+  }
+  
+  .button-group{
+    top: 800px;
+    right: 280px;
+    z-index: 1;
+  }  
+
+  .btn-preinscription, .btn-kit{
+    width: 280px;
+    padding: 10px;
+    font-size: 2rem;
+  }
+}
