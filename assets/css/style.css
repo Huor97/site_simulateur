@@ -154,7 +154,9 @@ nav ul li a{
 }
 
 @media screen and (max-width: 768px) {
-  
+  main {
+    padding: 0;
+  }
   header{
     height: 100vh;
     display: flex;
