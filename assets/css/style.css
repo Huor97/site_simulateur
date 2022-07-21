@@ -117,6 +117,39 @@ nav ul li a{
   color: #FFFFFF;
 }
 
+/* *********************** sprint */
+
+#sprint{
+  display: flex;
+  background-color: #FFFFFF;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+#sprint-video #video{
+  width: 700px;
+  height: 380px;
+}
+
+.sprint-text > div{
+  display: flex;
+  align-items: center;
+  height: 1rem;
+}
+
+.sprint-text > div > h2{
+  cursor: pointer;
+}
+
+.fas{
+  padding-right: 0.3rem;
+  font-size: 30px;
+}
+.sprint-text p{
+  height: 0;
+  overflow: hidden;
+}
 @media screen and (max-width:960px){
   #logo img{
     width: 200px;
@@ -151,6 +184,23 @@ nav ul li a{
   nav ul li a{
     font-size: 0.8rem;
   }
+
+  /* ********************** sprint */
+  #sprint{
+    flex-direction: column;
+  }
+
+  #sprint-video {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #sprint-video > #video {
+    width: 830px;
+    height: 400px;
+  }
+
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -178,7 +228,7 @@ nav ul li a{
   
   .cta .girl{
     width: 450px;
-    top: 340px;
+    top: 400px;
   }
 
   .cta .bubble{
@@ -206,4 +256,9 @@ nav ul li a{
     padding: 10px;
     font-size: 2rem;
   }
+
+  nav ul li a{
+    font-size: 1.3rem;
+  }
+
 }
