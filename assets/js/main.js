@@ -1,40 +1,57 @@
-// function initAccordeon() {
-//     const accordeons = document.querySelectorAll(".sprint-text")
+import test from "../js/test.json"
+
+console.log(test[0]);
+
+// function initAccordeons(){
+
+//   const accordeons = document.querySelectorAll(".sprint-text");
+
+// //   récupérer chaque accordeons et en clickant afficher les text
 //     for (const accordeon of accordeons) {
-//         accordeon = document.addEventListener("click", toggleAccordeon)
+//     accordeon.addEventListener("click", toggleAccordeon);
+//     accordeon
+//       .querySelector(".panel")
+//       .addEventListener("transitionend", onPanelTransitionEnd);
+//   }
+
+//   // accordeon click event handler
+//   function toggleAccordeon(evt) {
+    
+//     const activeAccordeon = document.querySelector(".sprint-text.active");
+//     const clickedAccordeon = evt.currentTarget;
+
+//     if (activeAccordeon && activeAccordeon !== clickedAccordeon) {
+
+//       activeAccordeon.classList.remove("active");
+//       closePanel(activeAccordeon.querySelector(".panel"));
 //     }
 
-//     function toggleAccordeon(evt) {
-//         const activParagraph = document.querySelectorAll(".paragraphs")
-//         activParagraph.classList;
-//         activParagraph.toggle(true)
+//     clickedAccordeon.classList.toggle("active");
+//     const accordeonPanel = clickedAccordeon.querySelector(".panel");
 
-//         if(activParagraph){
-//             console.log(activParagraph);
-//         }else{
-//             console.log("ne marche pas");
-//         }
+//     if (clickedAccordeon.classList.contains("active")) {
+//       accordeonPanel.style.height = accordeonPanel.scrollHeight + "px";
+//     } else {
+//       closePanel(accordeonPanel);
 //     }
+//   }
+
+//   // panel transition et evenement
+//   function onPanelTransitionEnd(evt) {
+    
+//     const panel = evt.currentTarget;
+//     const accordeon = panel.closest(".accordeon");
+//     if (accordeon.classList.contains("active")) {
+//       panel.style.height = "auto";
+//     }
+//   }
+
+//   // ferme accordeon panel
+//   function closePanel(panel) {
+//     panel.style.height = panel.scrollHeight + "px";
+//     setTimeout(() => (panel.style.height = "0px"), 0);
+//   }
 // }
 
-// initAccordeon()
-
-function initAccordeon(){
-
-    let accordeons = document.querySelectorAll(".panel");
-
-    for (const accordeon of accordeons) {
-        accordeon.addEventListener("click", toggleAccordeon)
-        console.log(accordeon);
-    }
-
-    
-
-    function toggleAccordeon() {
-        const paragraph = document.querySelector("#toggle-test")
-        paragraph.classList.toggle("paragraphs-active");
-     }
-    
-}
-initAccordeon()
+// initAccordeons()
 

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "partenaire": "la cité des métiers",
+        "logo": "assets/images/Logos partenaires/la cite des métiers.png"   
+    },
+    {
+        "id": 2,
+        "partenaire": "banque des territoires",
+        "logo":""   
+    },
+    {
+        "id": 3,
+        "partenaire": "face",
+        "logo":""   
+    },
+    {
+        "id": 4,
+        "partenaire": "ministère dy travial",
+        "logo":""   
+    },
+    {
+        "id": 5,
+        "partenaire": "o clock",
+        "logo":""   
+    },
+    {
+        "id": 6,
+        "partenaire": "pop",
+        "logo":""   
+    },
+    {
+        "id": 7,
+        "partenaire": "sqyway",
+        "logo":""   
+    }
+
+]

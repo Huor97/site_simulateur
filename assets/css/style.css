@@ -23,7 +23,7 @@ header{
   padding-left: 50px;
   padding-bottom: 40px;
   background: rgb(2,0,36);
-  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(249,87,66,1) 25%, rgba(249,87,66,1) 100%); 
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff 25%, #f95742 25%, #f95742 100%); 
 }
 
 #logo img{
@@ -90,7 +90,7 @@ header{
 
 .btn-preinscription{
   color: black;
-  background-color: rgb(251, 255, 0);  
+  background-color: #fbff00;  
 }
 
 .btn-kit{
@@ -99,7 +99,7 @@ header{
 }
 
 nav{
-  background-color: #ce3b30;
+  background-color: #fbff00;
 }
 
 nav ul{
@@ -117,22 +117,63 @@ nav ul li a{
   text-decoration: none;
   font-size: 1.2rem;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 /* *********************** sprint */
-
 #sprint{
   display: flex;
-  background-color: #FFFFFF;
+  background-color: #f95742;
+  color: #ffffff;
   justify-content: space-between;
   padding: 1rem;
   margin-top: 1rem;
 }
 
+/* *********************** div qui contiens une image en sous de trois button dans la sprint camp */
+#div-image-sprint{
+  position: relative;
+}
+/* *********************** image en sous de trois button dans la sprint camp */
+#image-background-sprint{
+  position:absolute;
+  display: block;
+  width: auto;
+  height: 200px;
+  opacity: .4;
+  top: 199px;
+  left: -16px;
+  bottom: 0;
+}
+
+.titre-sprint-camp{
+  color: #000000;
+  top: 30px;
+  left: 20px;
+  position: relative;
+}
+
+.titre-sprint-camp h2{
+  z-index: 1;
+  position: absolute;
+  left: 35px;
+  top: 12px;
+}
+
+.titre-sprint-camp img{
+  position: absolute;
+  display: block;
+  width: 300px;
+  top: 0px;
+}
+
 #sprint-video #video{
   width: 700px;
   height: 380px;
+}
+
+.sprint-text:nth-child(2){
+  padding-top: 150px;
 }
 
 .sprint-text > div{
@@ -143,21 +184,72 @@ nav ul li a{
 
 .sprint-text > div > h2{
   cursor: pointer;
+  z-index: 1;
 }
 
 .fas{
   padding-right: 0.3rem;
   font-size: 30px;
-}
+  color: #000000;
+  background: rgb(252,252,252);
+  background: radial-gradient(circle, rgba(252,252,252,1) 46%, rgba(249,87,66,1) 46%);}
 .sprint-text p{
   height: 0;
   overflow: hidden;
+  transition: all 0.3s ease-out;
+  padding-right: 20px;
+  text-align: justify;
+  z-index: 1;
 }
 
-.paragraphs-active{
-  height: 300px;
-  overflow: visible;
+/* ********************************** simulateur */
+
+#simulateur{
+  display: flex;
+  background-color: #f95742;
+  color: #ffffff;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-top: 1rem;
 }
+
+#simulateur-video #video-simulateur{
+  width: 700px;
+  height: 380px;
+}
+
+.titre-simulateur{
+  position: relative;
+}
+
+.titre-simulateur img{
+  position:absolute;
+  width: 300px;
+  top:0px;
+  left: 80px;
+}
+
+.titre-simulateur h2{
+  position: absolute;
+  color: #000000;
+  width: 250px;
+  text-transform: uppercase;
+  top: 10px;
+  left: 120px;
+  z-index: 1;
+}
+
+.text-simulateur{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-simulateur div {
+  padding-left: 40px;
+  padding-top: 100px;
+}
+
 
 @media screen and (max-width:960px){
   #logo img{
@@ -199,12 +291,52 @@ nav ul li a{
     flex-direction: column;
   }
 
+  #image-background-sprint{
+    width: 100%;
+    height: 200px;
+    top: 90px;
+    left: 0px;
+    bottom: 0;
+  }
+
   #sprint-video {
     display: flex;
     justify-content: center;
   }
   
   #sprint-video > #video {
+    width: 830px;
+    height: 400px;
+  }
+
+  /* ********************** simulateur */
+  #simulateur{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .titre-simulateur img{
+    top: -230px;
+    left: 0px;
+    margin-left: 10px;
+  }
+  
+  .titre-simulateur h2{
+    top: -220px;
+    left: 40px;
+  }
+
+  .text-simulateur div {
+    padding-left: 0px;
+  }
+  
+
+  #simulateur-video {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #simulateur-video > #video-simulateur {
     width: 830px;
     height: 400px;
   }
@@ -252,22 +384,23 @@ nav ul li a{
   }
 
   .cta .bubble{
-    width: 45%;
-    right: 300px;
-    top: 400px;
+    width: 40%;
+    right: 390px;
+    top: 170px;
     z-index: 1;
   }
   
   .cta p{
-    right: 310px;
-    top: 450px;
+    right: 400px;
+    top: 220px;
     font-size: 1.3rem;
     z-index: 2;
+    transform: rotate(-9deg);
   }
   
   .button-group{
-    top: 800px;
-    right: 280px;
+    top: 580px;
+    right: 380px;
     z-index: 1;
   }  
 
